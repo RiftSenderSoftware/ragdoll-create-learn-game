@@ -10,6 +10,7 @@ TagManager:
   - Hands
   - NPCHandFight
   - Dinamite
+  - Ground
   layers:
   - Default
   - TransparentFX
