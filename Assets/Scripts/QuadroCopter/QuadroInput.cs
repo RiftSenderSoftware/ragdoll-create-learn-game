@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class QuadroInput : MonoBehaviour
@@ -15,7 +16,6 @@ public class QuadroInput : MonoBehaviour
     public AudioSource flyAudioSource;
     public AudioClip flySound;
     
-
     public AudioClip preflySound;
 
     public GameObject quadroCenter;
@@ -33,15 +33,17 @@ public class QuadroInput : MonoBehaviour
         InputKeyboard();
         InputMouse();
 
-       
 
-        quadroCameraGM.transform.position = gameObject.transform.position + new Vector3(0, 1f, 3);
-        quadroCameraGM.transform.rotation = gameObject.transform.rotation;  
+        quadroCameraGM.transform.position = gameObject.transform.position + new Vector3(0, 1, -3);
+
+        quadroCameraGM.transform.rotation = gameObject.transform.rotation;
+        
+        
     }
 
     private void InputKeyboard()
     {
-        float translation = Input.GetAxis("Vertical") * speed;
+        float translation = Input.GetAxis("Vertical") * rotationSpeed;
         float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
         
 
@@ -49,8 +51,8 @@ public class QuadroInput : MonoBehaviour
         translation *= Time.deltaTime;
         rotation *= Time.deltaTime;
 
-        // Move translation along the object's z-axis
-        gameObject.transform.Translate(0, 0, translation);
+        // Rotate around our X-axis
+        gameObject.transform.Rotate(translation, 0, 0);
 
         // Rotate around our Z-axis
         gameObject.transform.Rotate(0, 0, rotation);
@@ -83,7 +85,9 @@ public class QuadroInput : MonoBehaviour
         float h = horizontalSpeed * Input.GetAxis("Mouse X");
         float v = verticalSpeed * Input.GetAxis("Mouse Y");
 
-        gameObject.transform.Rotate(0, h, 0);
+        
+
+        gameObject.transform.Rotate(0, 0, 0);
     }
 
 }
