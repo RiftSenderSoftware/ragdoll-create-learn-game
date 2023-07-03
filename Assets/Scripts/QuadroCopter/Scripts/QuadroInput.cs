@@ -11,13 +11,12 @@ public class QuadroInput : MonoBehaviour
     private float steeringValue = 0;
     private float steeringVelocity = 0;
 
-    public GameObject nullRotatePoint;
     private bool jump;
 
     float horizontalSpeed = 2.0f;
     float verticalSpeed = 2.0f;
 
-    public GameObject quadroCameraGM;
+    
     public GameObject quadroCenter;
     public float speed = 100.0f;
     public float rotationSpeed = 100.0f;
@@ -56,8 +55,8 @@ public class QuadroInput : MonoBehaviour
         //gameObject.transform.rotation.SetFromToRotation(gameObject.transform.position, nullRotatePoint.transform.position);
 
 
-        nullRotatePoint.transform.position = gameObject.transform.position;
-        quadroCameraGM.transform.position = gameObject.transform.position + new Vector3(16, 9, -4);
+        //nullRotatePoint.transform.position = gameObject.transform.position;
+        //quadroCameraGM.transform.position = gameObject.transform.position + new Vector3(16, 9, -4);
 
         //quadroCameraGM.transform.rotation = gameObject.transform.rotation; 
     }
