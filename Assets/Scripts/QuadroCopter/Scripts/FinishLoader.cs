@@ -18,23 +18,24 @@ public class FinishLoader : MonoBehaviour
             if (gameObject.name == "FinishLevel2")
             {
                 SceneManager.LoadScene(6);
-
             }
             if (gameObject.name == "FinishLevel3")
             {
                 SceneManager.LoadScene(7);
-
             }
             if (gameObject.name == "FinishLevel4")
             {
                 SceneManager.LoadScene(8);
-
             }
             if (gameObject.name == "FinishLevel5")
             {
                 SceneManager.LoadScene(9);
-
             }
+            if (gameObject.name == "FinishSandboxLevel")
+            {
+                SceneManager.LoadScene(4);
+            }
+            
         }
         
     }

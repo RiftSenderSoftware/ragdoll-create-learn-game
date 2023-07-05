@@ -1111,11 +1111,11 @@ RectTransform:
   m_Father: {fileID: 2501588034600390909}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1366, y: 768}
-  m_Pivot: {x: 1, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2501588034359244274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1774,7 @@ GameObject:
   - component: {fileID: 2501588034902556390}
   - component: {fileID: 2501588034894719078}
   - component: {fileID: 2501588034894719076}
+  - component: {fileID: 6673570293824183497}
   m_Layer: 0
   m_Name: FreeLookCameraRig
   m_TagString: Untagged
@@ -1854,6 +1855,21 @@ MonoBehaviour:
   visualiseInEditor: 1
   closestDistance: 10
   dontClipTag: Player
+--- !u!114 &6673570293824183497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2501588034905447810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00aea8f5ea090244fa94d64be0befad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+  coinsChecker: 0
+  uGUI: {fileID: 2501588034477054258}
 --- !u!1 &2501588034905447812
 GameObject:
   m_ObjectHideFlags: 0
