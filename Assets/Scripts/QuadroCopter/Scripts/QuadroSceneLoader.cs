@@ -5,39 +5,85 @@ using UnityEngine.SceneManagement;
 
 public class QuadroSceneLoader : MonoBehaviour
 {
+    public SceneAlpha scalp;
+    public float delayTime = 1;
     public void MainSceneLoad()
     {
-        SceneManager.LoadScene(4);
+        
+        Invoke("SceneLoadMain", delayTime);
+        scalp.EndAnim();
     }
     public void LoadLevel1()
     {
-        SceneManager.LoadScene(3);
+        Invoke("SceneLoad1", delayTime);
+        scalp.EndAnim();
+
+
     }
     public void LoadLevel2()
     {
-        SceneManager.LoadScene(5);
+        Invoke("SceneLoad2", delayTime);
+        scalp.EndAnim();
     }
     public void LoadLevel3()
     {
-        SceneManager.LoadScene(6);
+        Invoke("SceneLoad3", delayTime);
+        scalp.EndAnim();
     }
     public void LoadLevel4()
     {
-        SceneManager.LoadScene(7);
+        Invoke("SceneLoad4", delayTime);
+        scalp.EndAnim();
     }
     public void LoadLevel5()
     {
-        SceneManager.LoadScene(8);
+        Invoke("SceneLoad5", delayTime);
+        scalp.EndAnim();
     }
 
     public void SandboxSceneLoad()
     {
-        SceneManager.LoadScene(10);
+        Invoke("SceneLoadSandbox", delayTime);
+        scalp.EndAnim();
     }
     public void QuitGame()
     {
         Application.Quit();
     }
+    // √Œ—œŒƒ», ƒ¿œ–Œ—“»∆ “€ Ã≈Õﬂ «¿ ›“Œ!!!
+    public void SceneLoadMain()
+    {
+        SceneManager.LoadScene(4);
+    }
+    public void SceneLoad1()
+    {
+        SceneManager.LoadScene(3);
+    }
 
+
+    public void SceneLoad2()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void SceneLoad3()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void SceneLoad4()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void SceneLoad5()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void SceneLoadSandbox()
+    {
+        SceneManager.LoadScene(10);
+    }
 
 }
