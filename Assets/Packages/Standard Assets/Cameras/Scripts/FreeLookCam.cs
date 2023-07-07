@@ -26,7 +26,7 @@ namespace UnityStandardAssets.Cameras
         private const float k_LookDistance = 100f;    // How far in front of the pivot the character's look target is.
 		private Vector3 m_PivotEulers;
 		private Quaternion m_PivotTargetRot;
-		private Quaternion m_TransformTargetRot;
+		public Quaternion m_TransformTargetRot;
 
         protected override void Awake()
         {

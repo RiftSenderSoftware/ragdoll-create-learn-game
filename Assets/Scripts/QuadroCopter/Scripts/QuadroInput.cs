@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityStandardAssets.Cameras;
 
 public class QuadroInput : MonoBehaviour
 {
@@ -26,8 +27,10 @@ public class QuadroInput : MonoBehaviour
     public AudioClip flySound;
     public AudioClip preflySound;
 
-
-    
+    public GameObject mainModels;
+    public GameObject rbModels;
+    public GameObject deathCanvas;
+    public GameObject flcGm;
 
     Vector3 startLocalEulerAngles = Vector3.zero;
 
@@ -146,5 +149,21 @@ public class QuadroInput : MonoBehaviour
 
         }
         
+    }
+
+    public void PlayerDead()
+    {
+        /* Отключает рб и коллайдеры у основного объекта для заморорзки камеры
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        for(int i = 0; quadroCollider.Length != i; i++) 
+        {
+            quadroCollider[i].enabled = false;
+        }
+        */
+        deathCanvas.SetActive(true);
+        FreeLookCam flc = flcGm.GetComponent<FreeLookCam>();
+        flc.enabled = false;
+        mainModels.SetActive(false);
+        rbModels.SetActive(true);
     }
 }
