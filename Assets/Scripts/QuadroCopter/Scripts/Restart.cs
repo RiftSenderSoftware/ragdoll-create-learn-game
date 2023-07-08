@@ -18,27 +18,27 @@ public class Restart : MonoBehaviour
     {
         if (gameObject.name == "FinishLevel1")
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(1);
         }
         if (gameObject.name == "FinishLevel2")
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(2);
         }
         if (gameObject.name == "FinishLevel3")
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(3);
         }
         if (gameObject.name == "FinishLevel4")
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(4);
         }
         if (gameObject.name == "FinishLevel5")
         {
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(5);
         }
         if (gameObject.name == "FinishSandboxLevel")
         {
-            SceneManager.LoadScene(10);
+            SceneManager.LoadScene(7);
         }
     }
 }

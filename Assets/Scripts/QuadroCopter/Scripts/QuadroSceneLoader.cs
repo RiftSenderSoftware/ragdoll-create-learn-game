@@ -53,37 +53,37 @@ public class QuadroSceneLoader : MonoBehaviour
     // ÃÎÑÏÎÄÈ, ÄÀÏĞÎÑÒÈÆ ÒÛ ÌÅÍß ÇÀ İÒÎ!!!
     public void SceneLoadMain()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(0);
     }
     public void SceneLoad1()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 
 
     public void SceneLoad2()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(2);
     }
 
     public void SceneLoad3()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(3);
     }
 
     public void SceneLoad4()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(4);
     }
 
     public void SceneLoad5()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(5);
     }
 
     public void SceneLoadSandbox()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(6);
     }
 
 }

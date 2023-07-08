@@ -13,27 +13,27 @@ public class FinishLoader : MonoBehaviour
             Debug.Log("Player trigged finish collider. Collider Name:" + gameObject.name.ToString());
             if (gameObject.name == "FinishLevel1")
             {
-                SceneManager.LoadScene(5);
+                SceneManager.LoadScene(2);
             }
             if (gameObject.name == "FinishLevel2")
             {
-                SceneManager.LoadScene(6);
+                SceneManager.LoadScene(3);
             }
             if (gameObject.name == "FinishLevel3")
             {
-                SceneManager.LoadScene(7);
+                SceneManager.LoadScene(4);
             }
             if (gameObject.name == "FinishLevel4")
             {
-                SceneManager.LoadScene(8);
+                SceneManager.LoadScene(5);
             }
             if (gameObject.name == "FinishLevel5")
             {
-                SceneManager.LoadScene(9);
+                SceneManager.LoadScene(6);
             }
             if (gameObject.name == "FinishSandboxLevel")
             {
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(0);
             }
             
         }
