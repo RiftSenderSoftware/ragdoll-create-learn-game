@@ -33,6 +33,8 @@ public class QuadroInput : MonoBehaviour
     public GameObject deathCanvas;
     public GameObject flcGm;
 
+    public GameObject[] carrentTrans;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,7 @@ public class QuadroInput : MonoBehaviour
     }
     private void Update()
     {
+        //InputTransform();
         if (gameObject.transform.rotation.x >= 30)
         {
             gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up);
@@ -80,9 +83,9 @@ public class QuadroInput : MonoBehaviour
     private void InputKeyboard()
     {
         float rotationXAxis = SimpleInput.GetAxis("Vertical") * rotationSpeed;
-        float rotationYAxis = SimpleInput.GetAxis("HorizontalArrow") * rotationSpeed;
         float rotationZAxis = SimpleInput.GetAxis("Horizontal") * rotationSpeed;
 
+        float rotationYAxis = SimpleInput.GetAxis("HorizontalArrow") * rotationSpeed;
         float moveHorizontal = SimpleInput.GetAxis("VerticalArrow") * rotationSpeed;
        
         
@@ -94,20 +97,52 @@ public class QuadroInput : MonoBehaviour
         rotationYAxis *= Time.deltaTime;
 
         moveHorizontal *= Time.deltaTime;
-        
+
 
         // Rotate around our XYZ-axis
-        gameObject.transform.Rotate(rotationXAxis, 0, 0);
-        gameObject.transform.Rotate(0, rotationYAxis, 0);
-        gameObject.transform.Rotate(0, 0, -rotationZAxis);
+        //gameObject.transform.Rotate(rotationXAxis, 0, 0);
+        //gameObject.transform.Rotate(0, rotationYAxis, 0);
+        //gameObject.transform.Rotate(0, 0, -rotationZAxis);
+        gameObject.GetComponent<Rigidbody>().AddForce(rotationZAxis * speed, 0, 0);
+
+        
+        
+        gameObject.GetComponent<Rigidbody>().AddRelativeForce(0, 0, rotationXAxis * speed);
+        
 
         gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, moveHorizontal, 0) * speed);
+
 
         
         // функция аплай форс и 
         if (SimpleInput.GetKey(KeyCode.W)) {  }
     }
+    // нерабочая функция
+    public void InputTransform()
+    {
+        if (SimpleInput.GetAxis("Horizontal") < 0)
+        {
+            gameObject.transform.rotation = carrentTrans[1].transform.rotation;
+        }
+        
+        if (SimpleInput.GetAxis("Horizontal") > 0)
+        {
+            gameObject.transform.rotation = carrentTrans[2].transform.rotation;
+        }
 
+        if (SimpleInput.GetAxis("Vertical") < 0)
+        {
+            gameObject.transform.rotation = carrentTrans[3].transform.rotation;
+        }
+        if (SimpleInput.GetAxis("Vertical") == 0)
+        {
+            gameObject.transform.rotation = carrentTrans[0].transform.rotation;
+        }
+        if (SimpleInput.GetAxis("Vertical") > 0)
+        {
+            gameObject.transform.rotation = carrentTrans[4].transform.rotation;
+        }
+    }
     private void ApplyForce(Rigidbody body)
     {
         Vector3 direction = body.transform.position - transform.position;

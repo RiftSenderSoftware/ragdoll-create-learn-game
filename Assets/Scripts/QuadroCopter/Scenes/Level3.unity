@@ -2469,6 +2469,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1073978567}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartPreset
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Restart, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8446276270048465307, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
       propertyPath: m_Name
       value: Player

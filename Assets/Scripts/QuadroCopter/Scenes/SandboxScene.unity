@@ -8596,6 +8596,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bf0367471078bc4698fa7762bb0221d, type: 3}
+--- !u!1 &956706441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956706442}
+  m_Layer: 0
+  m_Name: CarrentTrans
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &956706442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956706441}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!4 &963972854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 549736260013114019, guid: 0bf0367471078bc4698fa7762bb0221d, type: 3}
@@ -13487,6 +13518,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bf0367471078bc4698fa7762bb0221d, type: 3}
+--- !u!114 &1495331386 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7050804618269930975, guid: 88b650cfea4e99c44b09adbd9fe1d959, type: 3}
+  m_PrefabInstance: {fileID: 1319962677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586011a232217174a863f534ea6d5602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1496242173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13724,6 +13766,30 @@ PrefabInstance:
     - target: {fileID: 2501588034905932194, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932892382509914416, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932892382509914417, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: carrentTrans
+      value: 
+      objectReference: {fileID: 956706441}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1495331386}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartPreset
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Restart, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8446276270048465307, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
       propertyPath: m_Name
