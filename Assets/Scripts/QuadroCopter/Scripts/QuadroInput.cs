@@ -103,8 +103,9 @@ public class QuadroInput : MonoBehaviour
         //gameObject.transform.Rotate(rotationXAxis, 0, 0);
         //gameObject.transform.Rotate(0, rotationYAxis, 0);
         //gameObject.transform.Rotate(0, 0, -rotationZAxis);
-        gameObject.GetComponent<Rigidbody>().AddForce(rotationZAxis * speed, 0, 0);
+        gameObject.GetComponent<Rigidbody>().AddRelativeForce(rotationZAxis * speed, 0, 0);
 
+        gameObject.transform.Rotate(0, rotationYAxis, 0);
         
         
         gameObject.GetComponent<Rigidbody>().AddRelativeForce(0, 0, rotationXAxis * speed);

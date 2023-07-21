@@ -83,7 +83,7 @@ public class QuadroSceneLoader : MonoBehaviour
 
     public void SceneLoadSandbox()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 
 }

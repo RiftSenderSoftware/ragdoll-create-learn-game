@@ -13747,50 +13747,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2501588034905932194, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2501588034905932194, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_LocalRotation.x
+    - target: {fileID: 6529536456227143897, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2501588034905932194, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_LocalRotation.y
+    - target: {fileID: 6529816073810093511, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2501588034905932194, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2501588034905932194, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3932892382509914416, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 3932892382509914417, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: carrentTrans
-      value: 
-      objectReference: {fileID: 956706441}
     - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1495331386}
-    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartPreset
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Restart, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193720214672118848, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8446276270048465307, guid: f426d61dbc4d9b443b07f851b049a22f, type: 3}
       propertyPath: m_Name
       value: Player
