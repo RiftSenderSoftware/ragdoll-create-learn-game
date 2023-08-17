@@ -416,7 +416,7 @@ MonoBehaviour:
   Radius: 10
   Force: 1500
   active: 0
-  ExplosionEffect: {fileID: 2725443721232331835, guid: ee6d3a2f887c54d498b0e39402644432, type: 3}
+  ExplosionEffect: {fileID: 1324124168371050, guid: 9eb3b1a11c610cd418079f132e291197, type: 3}
 --- !u!1 &3110547200403162351
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class NPCHealth : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        
         deadScript.EmenyDead(other.gameObject);
     }
 }

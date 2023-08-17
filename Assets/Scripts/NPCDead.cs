@@ -11,6 +11,9 @@ public class NPCDead : MonoBehaviour
     public NPCAI NPCAiScript;
     public Animator animator;
 
+    public GameObject bloodPrefab;
+    public GameObject floorBloodPrefab;
+
     public AudioSource panchHand;
 
     public bool isDead = false;
@@ -19,6 +22,7 @@ public class NPCDead : MonoBehaviour
     {
         if (NPCHealthScript.NPCHealthPoint < 0)
         {
+            
             isDead = true;
             NPCAiScript.npcMeshAgent.enabled = false;
             animator.enabled = false;
@@ -39,9 +43,14 @@ public class NPCDead : MonoBehaviour
         if (other.gameObject.tag == "Hands")
         {
             NPCHealthScript.NPCHealthPoint -= 30;
+            Instantiate(bloodPrefab);
+            bloodPrefab.transform.position = other.gameObject.transform.position;
             panchHand.Play();
             if (NPCHealthScript.NPCHealthPoint < 0)
             {
+                Instantiate(floorBloodPrefab);
+
+                floorBloodPrefab.transform.position = gameObject.transform.position;
                 isDead = true;
                 NPCAiScript.npcMeshAgent.enabled = false;
                 animator.enabled = false;

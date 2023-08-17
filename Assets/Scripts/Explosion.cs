@@ -59,7 +59,7 @@ public class Explosion : MonoBehaviour
             */
             if (rigidbody)
             {
-                rigidbody.AddExplosionForce(Force, transform.position, Radius, 1f);
+                rigidbody.AddExplosionForce(100, transform.position, Radius, 1f);
 
                 // эта хуета не толкает нижние риджидбади
                 NPCHealth health = rigidbody.GetComponent<NPCHealth>();
@@ -96,8 +96,6 @@ public class Explosion : MonoBehaviour
                         dead.NPCBodyRB[8].isKinematic = false;
                         health.NPCHealthPoint -= 500;
                     }
-
-                    
                 }
                 
 

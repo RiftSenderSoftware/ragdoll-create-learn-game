@@ -1081,6 +1081,8 @@ MonoBehaviour:
   NPCHealthScript: {fileID: 8101212229487531062}
   NPCAiScript: {fileID: 8101212229487531064}
   animator: {fileID: 8101212229487531067}
+  bloodPrefab: {fileID: 193062, guid: 01949c12a89de284792dc4b7b7128404, type: 3}
+  floorBloodPrefab: {fileID: 128724, guid: ece958bbba812cd4ca52c389ccc91c24, type: 3}
   panchHand: {fileID: 3595577458829487056}
   isDead: 0
 --- !u!114 &8101212229487531064
